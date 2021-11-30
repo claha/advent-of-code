@@ -56,7 +56,7 @@ while True:
     for i in range(len(allergens)):
         allergens[i].discard(allergen)
 
-no_allergens = sum([len(ingredient) for ingredient in ingredients])
+no_allergens = sum(len(ingredient) for ingredient in ingredients)
 print("Part 1:", no_allergens)
 assert no_allergens == 2412
 
