@@ -44,3 +44,10 @@ repos:
     rev: v8.29.0
     hooks:
       - id: eslint
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.28.0
+    hooks:
+      - id: yamllint
+        args:
+          - --strict
