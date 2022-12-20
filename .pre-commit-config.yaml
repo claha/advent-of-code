@@ -24,11 +24,15 @@ repos:
         additional_dependencies:
           - flake8-docstrings==1.6.0
           - pydocstyle==6.1.1
+        args:
+          - --ignore=E203,E501,W503,W504,D202
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.10.1
     hooks:
       - id: isort
+        args:
+          - --profile=black
 
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.3.1
@@ -39,11 +43,16 @@ repos:
     rev: v3.0.0-alpha.4
     hooks:
       - id: prettier
+        args:
+          - --ignore-unknown
 
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v8.29.0
     hooks:
       - id: eslint
+        args:
+          - --no-eslintrc
+          - --env "node:true, es6:true"
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.28.0
