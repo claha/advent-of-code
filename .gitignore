@@ -130,3 +130,5 @@ dmypy.json
 
 # AoC token
 .token
+input
+test
