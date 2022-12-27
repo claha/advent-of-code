@@ -7,8 +7,8 @@ import urllib.request
 
 # Parse arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("year", type=int, nargs="?")
 parser.add_argument("day", type=int, nargs="?")
+parser.add_argument("year", type=int, nargs="?")
 args = parser.parse_args()
 
 # Setup default value to today if not specified
