@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Get Advent Of Code input automatically."""
 import argparse
 import datetime
