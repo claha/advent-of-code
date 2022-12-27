@@ -60,3 +60,10 @@ repos:
       - id: yamllint
         args:
           - --strict
+
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.195
+    hooks:
+      - id: ruff
+        args:
+          - --fix

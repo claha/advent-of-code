@@ -72,7 +72,7 @@ for _ in range(10):
 
     proposes = {}
     for elf in elfs:
-        if not (elf.yp, elf.xp) in proposes:
+        if (elf.yp, elf.xp) not in proposes:
             proposes[(elf.yp, elf.xp)] = 0
         proposes[(elf.yp, elf.xp)] += 1
     for elf in elfs:
@@ -104,7 +104,7 @@ while True:
 
     proposes = {}
     for elf in elfs:
-        if not (elf.yp, elf.xp) in proposes:
+        if (elf.yp, elf.xp) not in proposes:
             proposes[(elf.yp, elf.xp)] = 0
         proposes[(elf.yp, elf.xp)] += 1
 

@@ -4,9 +4,9 @@ with open("input") as f:
 
 graph = {}
 for connection in data:
-    if not connection[0] in graph:
+    if connection[0] not in graph:
         graph[connection[0]] = []
-    if not connection[1] in graph:
+    if connection[1] not in graph:
         graph[connection[1]] = []
     if connection[1] != "start":
         graph[connection[0]].append(connection[1])

@@ -75,7 +75,7 @@ class Passport:
             if not self._hcl[0] == "#":
                 return False
             for i in range(1, 7):
-                if not self._hcl[i] in Passport.HEXADECIMAL:
+                if self._hcl[i] not in Passport.HEXADECIMAL:
                     return False
         else:
             return False
@@ -85,7 +85,7 @@ class Passport:
 
         if len(self._pid) == 9:
             for i in range(9):
-                if not self._pid[i] in Passport.DECIMAL:
+                if self._pid[i] not in Passport.DECIMAL:
                     return False
         else:
             return False

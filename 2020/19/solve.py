@@ -110,9 +110,9 @@ for message in messages.splitlines():
     if message in eexp0:
         matches += 1
     else:
-        if not message[0:exp_len] in eexp42:
+        if message[0:exp_len] not in eexp42:
             continue
-        if not message[-exp_len:] in eexp31:
+        if message[-exp_len:] not in eexp31:
             continue
         count42 = 0
         count31 = 0
