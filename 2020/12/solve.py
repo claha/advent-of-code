@@ -15,7 +15,7 @@ FORWARD = "F"
 # Part 1
 (y, x, d) = (0, 0, EAST)
 
-for (action, value) in instructions:
+for action, value in instructions:
     # Pre process action
     if action == FORWARD:
         action = d
@@ -76,7 +76,7 @@ assert distance == 882
 (y, x) = (0, 0)
 (wy, wx) = (1, 10)
 
-for (action, value) in instructions:
+for action, value in instructions:
     # Pre process action
     if action == RIGHT:
         action = LEFT

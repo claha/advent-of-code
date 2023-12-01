@@ -75,7 +75,6 @@ def bfs(blueprint, state, minutes):
             continue
 
         for robot in blueprint:
-
             # Check if allowed to build this robot
             if not state.allowed[robot.produce]:
                 continue

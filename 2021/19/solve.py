@@ -74,8 +74,8 @@ def compare(scanner, reference, target):
     """Find matching beacons."""
     for jo in range(NUM_ORIENTATIONS):
         stats = {}
-        for (x0, y0, z0) in scanner[reference]:
-            for (x1, y1, z1) in scanner[target]:
+        for x0, y0, z0 in scanner[reference]:
+            for x1, y1, z1 in scanner[target]:
                 (x1, y1, z1) = use_orientation(x1, y1, z1, jo)
                 dx = x0 - x1
                 dy = y0 - y1

@@ -86,7 +86,7 @@ while i < N:
 
         m = (m + 1) % len(moves)
 
-    for (y, x) in shape:
+    for y, x in shape:
         board.add((y, x))
         board_min_y = min(board_min_y, y)
 
@@ -129,7 +129,7 @@ while i < N:
 
         m = (m + 1) % len(moves)
 
-    for (y, x) in shape:
+    for y, x in shape:
         board.add((y, x))
         board_min_y = min(board_min_y, y)
 

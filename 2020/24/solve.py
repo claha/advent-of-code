@@ -45,9 +45,9 @@ for _ in range(100):
     to_black = set()
     to_white = set()
 
-    for (x, y, z) in black:
+    for x, y, z in black:
         neighbors = 0
-        for (dx, dy, dz) in directions.values():
+        for dx, dy, dz in directions.values():
             (nx, ny, nz) = (x + dx, y + dy, z + dz)
             if (nx, ny, nz) in black:
                 neighbors += 1
@@ -55,13 +55,13 @@ for _ in range(100):
             to_white.add((x, y, z))
 
     neighbors = {}
-    for (x, y, z) in black:
-        for (dx, dy, dz) in directions.values():
+    for x, y, z in black:
+        for dx, dy, dz in directions.values():
             (nx, ny, nz) = (x + dx, y + dy, z + dz)
             if (nx, ny, nz) not in neighbors:
                 neighbors[(nx, ny, nz)] = 0
             neighbors[(nx, ny, nz)] += 1
-    for (x, y, z) in neighbors:
+    for x, y, z in neighbors:
         if (x, y, z) not in black:
             if neighbors[(x, y, z)] == 2:
                 to_black.add((x, y, z))

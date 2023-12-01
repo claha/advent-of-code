@@ -76,7 +76,7 @@ for segments in data:
     # Create frequency map
     freq1 = [0] * 10
     freq2 = [0] * 10
-    for (i, j) in compares:
+    for i, j in compares:
         d1 = set(segments[i])
         d2 = set(segments[j])
         diff = (d1 | d2) - (d1 & d2)
@@ -88,7 +88,7 @@ for segments in data:
             freq2[j] += 1
 
     # Add mappings based on 1 segment diffs
-    for (i, j) in compares:
+    for i, j in compares:
         d1 = set(segments[i])
         d2 = set(segments[j])
         diff = (d1 | d2) - (d1 & d2)
@@ -111,7 +111,7 @@ for segments in data:
                 mapping[key] = "c"
 
     # Add mappings based on 2 segment diffs
-    for (i, j) in compares:
+    for i, j in compares:
         d1 = set(segments[i])
         d2 = set(segments[j])
         diff = (d1 | d2) - (d1 & d2)

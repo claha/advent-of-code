@@ -53,7 +53,6 @@ states = {0: (0, 0)}
 for i, (a, b, c) in enumerate(params):
     states_new = {}
     for z, inp in states.items():
-
         if z >= 26 ** (len(params) - i):
             continue
 

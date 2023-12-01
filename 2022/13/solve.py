@@ -54,7 +54,7 @@ assert sum(ordered_pairs) == 5292
 # Part 2
 divider_packets = [[[2]], [[6]]]
 packets = []
-for (left, right) in pairs:
+for left, right in pairs:
     packets.append(left)
     packets.append(right)
 packets.extend(divider_packets)

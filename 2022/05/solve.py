@@ -22,7 +22,7 @@ moves = [list(map(int, re.findall(r"\d+", move))) for move in moves.strip().spli
 
 # Part 1
 creates = deepcopy(creates_orig)
-for (n, f, t) in moves:
+for n, f, t in moves:
     for _ in range(n):
         creates[t].insert(0, creates[f].pop(0))
 
@@ -33,7 +33,7 @@ assert top == "QMBMJDFTD"
 
 # Part 2
 creates = deepcopy(creates_orig)
-for (n, f, t) in moves:
+for n, f, t in moves:
     for i in range(n - 1, -1, -1):
         creates[t].insert(0, creates[f].pop(i))
 

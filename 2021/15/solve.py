@@ -20,7 +20,7 @@ def dijkstra(graph):
         if node == (size - 1, size - 1):
             break
         visited.add(node)
-        for (dy, dx) in DELTA:
+        for dy, dx in DELTA:
             y = node[0] + dy
             x = node[1] + dx
             if (0 <= y < size) and (0 <= x < size) and (y, x) not in visited:

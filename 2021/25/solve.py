@@ -14,7 +14,7 @@ for y in range(len(data)):
 def move(herd, cucumber, dy, dx, y_max, x_max):
     """Move a herd."""
     moves = []
-    for (y, x) in herd:
+    for y, x in herd:
         if herd[(y, x)] != cucumber:
             continue
         y_next = (y + dy) % y_max

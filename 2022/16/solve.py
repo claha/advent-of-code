@@ -44,7 +44,7 @@ def bfs(graph, node, threshold):
         path = queue.popleft()
         node, cost = path[-1]
         visited = None
-        for (neighbour, c) in graph[node]:
+        for neighbour, c in graph[node]:
             if cost + c + 1 > threshold:
                 continue
             if visited is None:

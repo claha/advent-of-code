@@ -8,7 +8,6 @@ ADJ = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
 # Part 1
 flashes = 0
 for _ in range(100):
-
     for y in range(SIZE):
         for x in range(SIZE):
             cavern[y][x] += 1
@@ -24,7 +23,7 @@ for _ in range(100):
 
     while to_flash:
         (y, x) = to_flash.pop(0)
-        for (dy, dx) in ADJ:
+        for dy, dx in ADJ:
             if 0 <= y + dy < SIZE and 0 <= x + dx < SIZE:
                 cavern[y + dy][x + dx] += 1
                 if cavern[y + dy][x + dx] == 10:
@@ -44,7 +43,6 @@ assert flashes == 1603
 # Part 2
 step = 101
 while True:
-
     for y in range(SIZE):
         for x in range(SIZE):
             cavern[y][x] += 1
@@ -60,7 +58,7 @@ while True:
 
     while to_flash:
         (y, x) = to_flash.pop(0)
-        for (dy, dx) in ADJ:
+        for dy, dx in ADJ:
             if 0 <= y + dy < SIZE and 0 <= x + dx < SIZE:
                 cavern[y + dy][x + dx] += 1
                 if cavern[y + dy][x + dx] == 10:

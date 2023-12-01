@@ -30,7 +30,7 @@ def dijkstra(graph, start, end):
         h = graph[node[0]][node[1]]
         weight = 1
 
-        for (dy, dx) in DELTA:
+        for dy, dx in DELTA:
             y = node[0] + dy
             x = node[1] + dx
 

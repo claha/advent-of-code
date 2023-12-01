@@ -34,7 +34,7 @@ h = (0, 0)
 t = (0, 0)
 visited = set()
 visited.add(t)
-for (direction, steps) in data:
+for direction, steps in data:
     for _ in range(int(steps)):
         h = move_head(h, direction)
         t = move_tail(h, t)
@@ -47,7 +47,7 @@ assert len(visited) == 6181
 rope = [(0, 0) for _ in range(10)]
 visited = set()
 visited.add(rope[-1])
-for (direction, steps) in data:
+for direction, steps in data:
     for _ in range(int(steps)):
         rope[0] = move_head(rope[0], direction)
         for i in range(1, len(rope)):

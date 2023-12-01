@@ -26,7 +26,7 @@ for i in range(len(data)):
     for x in range(sx - (d - dy), sx + (d - dy) + 1):
         no_beacon.add((x, Y))
 
-for (sx, sy, bx, by) in data:
+for sx, sy, bx, by in data:
     if (bx, by) in no_beacon:
         no_beacon.remove((bx, by))
     if (sx, sy) in no_beacon:

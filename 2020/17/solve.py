@@ -26,9 +26,9 @@ for _ in range(6):
     to_inactive = set()
 
     # Go through active and count its neighbors
-    for (x, y, z) in active:
+    for x, y, z in active:
         neighbors = 0
-        for (dx, dy, dz) in DXDYDZ:
+        for dx, dy, dz in DXDYDZ:
             (nx, ny, nz) = (x + dx, y + dy, z + dz)
             if (nx, ny, nz) in active:
                 neighbors += 1
@@ -37,13 +37,13 @@ for _ in range(6):
 
     # Go through active and add its neighbors
     neighbors = {}
-    for (x, y, z) in active:
-        for (dx, dy, dz) in DXDYDZ:
+    for x, y, z in active:
+        for dx, dy, dz in DXDYDZ:
             (nx, ny, nz) = (x + dx, y + dy, z + dz)
             if (nx, ny, nz) not in neighbors:
                 neighbors[(nx, ny, nz)] = 0
             neighbors[(nx, ny, nz)] += 1
-    for (x, y, z) in neighbors:
+    for x, y, z in neighbors:
         if (x, y, z) not in active:
             if neighbors[(x, y, z)] == 3:
                 to_active.add((x, y, z))
@@ -77,9 +77,9 @@ for _ in range(6):
     to_inactive = set()
 
     # Go through active and count its neighbors
-    for (x, y, z, w) in active:
+    for x, y, z, w in active:
         neighbors = 0
-        for (dx, dy, dz, dw) in DXDYDZDW:
+        for dx, dy, dz, dw in DXDYDZDW:
             (nx, ny, nz, nw) = (x + dx, y + dy, z + dz, w + dw)
             if (nx, ny, nz, nw) in active:
                 neighbors += 1
@@ -88,13 +88,13 @@ for _ in range(6):
 
     # Go through active and add its neighbors
     neighbors = {}
-    for (x, y, z, w) in active:
-        for (dx, dy, dz, dw) in DXDYDZDW:
+    for x, y, z, w in active:
+        for dx, dy, dz, dw in DXDYDZDW:
             (nx, ny, nz, nw) = (x + dx, y + dy, z + dz, w + dw)
             if (nx, ny, nz, nw) not in neighbors:
                 neighbors[(nx, ny, nz, nw)] = 0
             neighbors[(nx, ny, nz, nw)] += 1
-    for (x, y, z, w) in neighbors:
+    for x, y, z, w in neighbors:
         if (x, y, z, w) not in active:
             if neighbors[(x, y, z, w)] == 3:
                 to_active.add((x, y, z, w))

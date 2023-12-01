@@ -19,7 +19,7 @@ for d in data:
 def fold_along_y(paper, line):
     """Fold along y."""
     paper_new = set()
-    for (x, y) in paper:
+    for x, y in paper:
         if y > line:
             y -= 2 * (y - line)
         paper_new.add((x, y))
@@ -29,7 +29,7 @@ def fold_along_y(paper, line):
 def fold_along_x(paper, line):
     """Fold along x."""
     paper_new = set()
-    for (x, y) in paper:
+    for x, y in paper:
         if x > line:
             x -= 2 * (x - line)
         paper_new.add((x, y))

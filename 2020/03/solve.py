@@ -51,7 +51,7 @@ assert trees == 220
 
 # Part 2
 trees = 1
-for (dy, dx) in [(1, 1), (1, 3), (1, 5), (1, 7), (2, 1)]:
+for dy, dx in [(1, 1), (1, 3), (1, 5), (1, 7), (2, 1)]:
     trees *= walk_and_count_trees(dy, dx)
 print("Part 2:", trees)
 assert trees == 2138320800

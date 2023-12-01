@@ -12,7 +12,7 @@ low_points = []
 for y in range(h):
     for x in range(w):
         low = True
-        for (dy, dx) in DELTA:
+        for dy, dx in DELTA:
             if 0 <= y + dy < h and 0 <= x + dx < w:
                 if data[y][x] >= data[y + dy][x + dx]:
                     low = False
@@ -35,7 +35,7 @@ def bfs(data, point):
 
     while queue:
         (y, x) = queue.pop(0)
-        for (dy, dx) in DELTA:
+        for dy, dx in DELTA:
             if 0 <= y + dy < h and 0 <= x + dx < w:
                 if data[y + dy][x + dx] != "9" and data[y + dy][x + dx] > data[y][x]:
                     if (y + dy, x + dx) not in visited:

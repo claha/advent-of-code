@@ -16,7 +16,6 @@ def create_exp(rule, rules):
     exp = ""
     opened = False
     for sub_rule in rules[rule].split(" "):
-
         if sub_rule in rules:
             if not opened:
                 exp += "("

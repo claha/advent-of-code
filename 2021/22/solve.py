@@ -62,7 +62,7 @@ class Cuboid:
 
 # Part 1
 cuboids = []
-for (instruction, (x0, x1, y0, y1, z0, z1)) in instructions:
+for instruction, (x0, x1, y0, y1, z0, z1) in instructions:
     if x0 < -50 and x1 < -50:
         continue
     if x0 > 50 and x1 > 50:
@@ -91,7 +91,7 @@ assert on == 583641
 
 # Part 2
 cuboids = []
-for (instruction, (x0, x1, y0, y1, z0, z1)) in instructions:
+for instruction, (x0, x1, y0, y1, z0, z1) in instructions:
     cuboids.append(Cuboid(x0, x1, y0, y1, z0, z1, instruction == "on"))
 
 volumes = []

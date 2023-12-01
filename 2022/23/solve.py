@@ -32,7 +32,7 @@ class Elf:
         """Propose move."""
         changes = False
         free = {}
-        for (dy, dx) in [N, S, W, E, NE, NW, SE, SW]:
+        for dy, dx in [N, S, W, E, NE, NW, SE, SW]:
             free[(dy, dx)] = (self.y + dy, self.x + dx) not in coords
         self.yp = self.y
         self.xp = self.x

@@ -14,7 +14,7 @@ def count_occupied_neighbours(waiting_area, row, col, look_further=False):
     height = len(waiting_area)
     width = len(waiting_area[0])
     count = 0
-    for (delta_row, delta_col) in [
+    for delta_row, delta_col in [
         (-1, -1),
         (-1, 0),
         (-1, 1),
