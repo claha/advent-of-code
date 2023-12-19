@@ -3,4 +3,4 @@
 
 ((js-mode . ((compile-command . "node solve.js")))
  (python-mode . ((compile-command . "python solve.py")))
- (rust-mode . ((compile-command . "rustc solve.rs -o /tmp/solve && /tmp/solve"))))
+ (rust-ts-mode . ((compile-command . "rustc solve.rs -o /tmp/solve && /tmp/solve"))))
