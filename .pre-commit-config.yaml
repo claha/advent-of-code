@@ -20,6 +20,7 @@ repos:
           - ALL
           - --fix
           - --quiet
+          - --exclude=2020,2021,2022,2023
       - id: ruff-format
 
   - repo: https://github.com/pre-commit/mirrors-prettier

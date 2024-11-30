@@ -1,4 +1,5 @@
 """Advent Of Code #17."""
+
 import math
 import re
 

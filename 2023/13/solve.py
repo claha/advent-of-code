@@ -1,4 +1,5 @@
 """Advent Of Code #13."""
+
 with open("input") as f:
     matrices = [matrix.strip() for matrix in f.read().split("\n\n")]
 

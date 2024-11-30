@@ -1,4 +1,5 @@
 """Advent Of Code #06."""
+
 times = [54, 81, 70, 88]
 distances = [446, 1292, 1035, 1007]
 

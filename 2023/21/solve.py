@@ -1,4 +1,5 @@
 """Advent Of Code #21."""
+
 from collections import deque
 
 import numpy as np

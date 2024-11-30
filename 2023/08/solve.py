@@ -1,4 +1,5 @@
 """Advent Of Code #08."""
+
 import re
 
 network = {}

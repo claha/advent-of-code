@@ -1,4 +1,5 @@
 """Advent Of Code #11."""
+
 from copy import deepcopy
 from functools import reduce
 

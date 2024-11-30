@@ -1,4 +1,5 @@
 """Advent Of Code #10."""
+
 with open("input") as f:
     field = [list(line.strip()) for line in f.readlines()]
 

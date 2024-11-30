@@ -1,4 +1,5 @@
 """Advent Of Code #20."""
+
 modules = {}
 flipflops = {}
 conjunctions = {}

@@ -1,4 +1,5 @@
 """Advent Of Code #11."""
+
 with open("input") as f:
     cavern = [list(map(int, list(d))) for d in f.read().split()]
 

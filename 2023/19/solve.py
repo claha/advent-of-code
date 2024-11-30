@@ -1,4 +1,5 @@
 """Advent Of Code #19."""
+
 with open("input") as f:
     rules, parts = f.read().split("\n\n")
 

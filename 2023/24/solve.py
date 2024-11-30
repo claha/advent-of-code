@@ -1,4 +1,5 @@
 """Advent Of Code #24."""
+
 import numpy as np
 
 with open("input") as f:

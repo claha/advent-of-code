@@ -1,4 +1,5 @@
 """Advent Of Code #08."""
+
 with open("input") as f:
     data = [d for d in f.readlines()]
 data = [d.replace("|", "").split() for d in data]

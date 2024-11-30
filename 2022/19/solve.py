@@ -1,4 +1,5 @@
 """Advent Of Code #19."""
+
 import re
 from collections import deque
 from copy import deepcopy

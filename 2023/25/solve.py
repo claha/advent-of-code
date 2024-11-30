@@ -1,4 +1,5 @@
 """Advent Of Code #23."""
+
 import networkx
 
 with open("input") as file:

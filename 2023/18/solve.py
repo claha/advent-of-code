@@ -1,4 +1,5 @@
 """Advent Of Code #18."""
+
 from shapely.geometry.polygon import Polygon
 
 with open("input") as f:

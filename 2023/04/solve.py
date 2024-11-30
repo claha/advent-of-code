@@ -1,4 +1,5 @@
 """Advent Of Code #03."""
+
 with open("input") as f:
     cards = [line.strip() for line in f.readlines()]
 

@@ -1,4 +1,5 @@
 """Advent Of Code #13."""
+
 with open("input") as f:
     data = f.read().splitlines()
 earliest_departure_timestamp = int(data[0])

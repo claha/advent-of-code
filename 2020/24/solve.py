@@ -1,4 +1,5 @@
 """Advent Of Code #24."""
+
 with open("input") as f:
     data = f.read()
 paths = data.splitlines()

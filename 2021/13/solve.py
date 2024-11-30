@@ -1,4 +1,5 @@
 """Advent Of Code #13."""
+
 with open("input") as f:
     data = [d.strip() for d in f.readlines()]
 

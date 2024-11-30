@@ -1,4 +1,5 @@
 """Advent Of Code #22."""
+
 import re
 
 with open("input") as f:

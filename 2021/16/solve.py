@@ -1,4 +1,5 @@
 """Advent Of Code #16."""
+
 from functools import reduce
 
 with open("input") as f:

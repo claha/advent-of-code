@@ -1,4 +1,5 @@
 """Advent Of Code #11."""
+
 with open("input") as f:
     image = [list(line.strip()) for line in f.readlines()]
 

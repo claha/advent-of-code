@@ -1,4 +1,5 @@
 """Advent Of Code #17."""
+
 with open("input") as f:
     data = f.read()
 matrix = data.splitlines()

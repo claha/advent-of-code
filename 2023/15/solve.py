@@ -1,4 +1,5 @@
 """Advent Of Code #15."""
+
 with open("input") as f:
     seq = f.read().strip().split(",")
 

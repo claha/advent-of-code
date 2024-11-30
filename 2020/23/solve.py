@@ -1,4 +1,5 @@
 """Advent Of Code #23."""
+
 with open("input") as f:
     data = f.read().strip()
 cups = [int(cup) for cup in data]

@@ -1,4 +1,5 @@
 """Advent Of Code #12."""
+
 import heapq as heap
 
 with open("input") as f:

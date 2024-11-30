@@ -1,4 +1,5 @@
 """Advent Of Code #25."""
+
 with open("input") as f:
     data = f.read()
 [card_public_key, door_public_key] = [int(key) for key in data.splitlines()]

@@ -1,4 +1,5 @@
 """Advent Of Code #10."""
+
 with open("input") as f:
     data = [int(d) for d in f.read().split()]
 jolts = [0] + sorted(data) + [max(data) + 3]

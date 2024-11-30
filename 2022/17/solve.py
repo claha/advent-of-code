@@ -1,4 +1,5 @@
 """Advent Of Code #17."""
+
 with open("input") as f:
     moves = f.read().strip()
 

@@ -1,4 +1,5 @@
 """Advent Of Code #02."""
+
 with open("input") as f:
     games = [line.strip() for line in f.readlines()]
 

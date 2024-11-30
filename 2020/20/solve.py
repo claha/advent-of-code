@@ -1,4 +1,5 @@
 """Advent Of Code #20."""
+
 import math
 
 with open("input") as f:
@@ -106,9 +107,9 @@ class Tile:
         """Fill image with tile, without border."""
         for r in range(1, self._height - 1):
             for c in range(1, self._width - 1):
-                image[
-                    (start_row + r - 1) * image_width + start_col + c - 1
-                ] = self._pixels[r * self._width + c]
+                image[(start_row + r - 1) * image_width + start_col + c - 1] = (
+                    self._pixels[r * self._width + c]
+                )
 
 
 tiles = []

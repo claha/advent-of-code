@@ -1,4 +1,5 @@
 """Advent Of Code #23."""
+
 import sys
 
 sys.setrecursionlimit(10000)
