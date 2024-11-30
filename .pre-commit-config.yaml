@@ -11,35 +11,16 @@ repos:
       - id: check-executables-have-shebangs
       - id: check-shebang-scripts-are-executable
 
-  - repo: https://github.com/psf/black
-    rev: 23.11.0
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.8.1
     hooks:
-      - id: black
+      - id: ruff
         args:
-          - --safe
+          - --select
+          - ALL
+          - --fix
           - --quiet
-
-  - repo: https://github.com/PyCQA/flake8
-    rev: 6.1.0
-    hooks:
-      - id: flake8
-        additional_dependencies:
-          - flake8-docstrings==1.6.0
-          - pydocstyle==6.1.1
-        args:
-          - --ignore=E203,E501,W503,W504,D202
-
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.12.0
-    hooks:
-      - id: isort
-        args:
-          - --profile=black
-
-  - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
-    hooks:
-      - id: pyupgrade
+      - id: ruff-format
 
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: v3.1.0
@@ -62,10 +43,3 @@ repos:
       - id: yamllint
         args:
           - --strict
-
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.1.6
-    hooks:
-      - id: ruff
-        args:
-          - --fix
