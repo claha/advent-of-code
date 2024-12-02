@@ -1,4 +1,4 @@
-"""Advent Of Code #01."""
+"""Advent Of Code #02."""
 
 from pathlib import Path
 
