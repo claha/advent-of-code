@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aoc"
+version = "0.1.0"
+description = "A package for Advent of Code"
+authors = [
+    {name = "Claes Hallström", email = "hallstrom.claes@gmail.com" }
+]
+license = {text = "MIT"}
+dependencies = []
+
+[tool.setuptools]
+packages = ["aoc"]

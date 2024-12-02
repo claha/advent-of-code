@@ -10,6 +10,7 @@ repos:
           - --fix=lf
       - id: check-executables-have-shebangs
       - id: check-shebang-scripts-are-executable
+      - id: check-toml
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.8.1
