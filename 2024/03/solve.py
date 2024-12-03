@@ -1,10 +1,10 @@
-"""Advent Of Code #03."""
+"""Advent Of Code."""
 
 import re
-from pathlib import Path
 
-with Path.open("input") as f:
-    data = f.read()
+import aoc
+
+data = aoc.input_read()
 
 RE_MUL = r"mul\(\d{1,3},\d{1,3}\)"
 RE_DO = r"do\(\)"
@@ -21,8 +21,7 @@ def mul(exp: str) -> int:
 
 # Part 1
 total = sum(mul(exp) for exp in exps if re.match(RE_MUL, exp))
-print("Part 1:", total)
-assert total == 159833790
+aoc.check_part1(total, 159833790)
 
 # Part 2
 enabled = True
@@ -35,5 +34,4 @@ for exp in exps:
     elif enabled and re.match(RE_MUL, exp):
         total += mul(exp)
 
-print("Part 2:", total)
-assert total == 89349241
+aoc.check_part2(total, 89349241)

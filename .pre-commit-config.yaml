@@ -22,7 +22,7 @@ repos:
           - --fix
           - --quiet
           - --exclude=2020,2021,2022,2023
-          - --ignore=INP001,PLR2004,S101,T201
+          - --ignore=INP001
       - id: ruff-format
 
   - repo: https://github.com/pre-commit/mirrors-prettier
