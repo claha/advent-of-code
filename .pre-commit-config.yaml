@@ -1,7 +1,7 @@
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -12,36 +12,16 @@ repos:
       - id: check-shebang-scripts-are-executable
       - id: check-toml
 
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.8.1
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.8
     hooks:
-      - id: ruff
+      - id: ruff-check
         args:
-          - --select
-          - ALL
           - --fix
-          - --quiet
-          - --exclude=2020,2021,2022,2023
-          - --ignore=INP001
       - id: ruff-format
 
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.1.0
-    hooks:
-      - id: prettier
-        args:
-          - --ignore-unknown
-
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.54.0
-    hooks:
-      - id: eslint
-        args:
-          - --no-eslintrc
-          - --env "node:true, es6:true"
-
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.33.0
+    rev: v1.37.1
     hooks:
       - id: yamllint
         args:

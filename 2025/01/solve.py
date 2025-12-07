@@ -12,7 +12,7 @@ for inst in instructions:
     dir = 1 if inst[0] == "R" else -1
     dist = int(inst[1:])
     dial = (dial + dir * dist) % 100
-    answer += (dial == 0)
+    answer += dial == 0
 
 aoc.check_part1(answer, 1021)
 
@@ -29,4 +29,3 @@ for inst in instructions:
             answer += 1
 
 aoc.check_part2(answer, 5933)
-
