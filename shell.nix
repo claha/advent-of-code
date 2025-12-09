@@ -5,7 +5,8 @@ pkgs.mkShell {
 
   buildInputs = with pkgs; [
     pre-commit
-    python3
+    python313
     ruff
+    python313Packages.shapely
   ];
 }
